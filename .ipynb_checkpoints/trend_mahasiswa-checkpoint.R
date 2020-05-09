@@ -3,7 +3,7 @@ library(ggplot2)
 library(openxlsx)
 
 #Membaca file mahasiswa.xlsx
-mahasiswa <- read.xlsx("https://academy.dqlab.id/dataset/mahasiswa.xlsx",sheet = "Sheet 1")
+mahasiswa <- read.xlsx("mahasiswa.xlsx",sheet = "Sheet 1")
 
 #Menghitung Jumlah Data by Fakultas
 summarybyfakultas <- aggregate(x=mahasiswa$JUMLAH, by=list(Kategori=mahasiswa$Fakultas, Tahun=mahasiswa$ANGKATAN), FUN=sum)

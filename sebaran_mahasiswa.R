@@ -3,7 +3,7 @@ library(ggplot2)
 library(openxlsx)
 
 #Membaca file mahasiswa.xlsx
-mahasiswa <- read.xlsx("https://academy.dqlab.id/dataset/mahasiswa.xlsx",sheet = "Sheet 1")
+mahasiswa <- read.xlsx("mahasiswa.xlsx",sheet = "Sheet 1")
 
 #Membuat kanvas
 gambar <- ggplot(mahasiswa, aes(x=Fakultas, y=JUMLAH, fill=Fakultas))
